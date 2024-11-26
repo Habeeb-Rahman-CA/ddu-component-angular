@@ -1,0 +1,13 @@
+.drop-zone {
+    margin: 100px auto;
+    border: 2px dashed #8a8a8a;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }

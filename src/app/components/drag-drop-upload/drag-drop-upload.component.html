@@ -1,0 +1,11 @@
+<div class="drop-zone" (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+  <p>Drag and drop your files here, or click to upload</p>
+  <input type="file" (change)="onFileSelect($event)" hidden #fileInput />
+  <button type="button" (click)="fileInput.click()">Open File</button>
+</div>
+
+<div>
+    @for (imageUrl of imageUrls; track $index) {
+        <img [src]="imageUrl" alt="">
+    }
+</div>
